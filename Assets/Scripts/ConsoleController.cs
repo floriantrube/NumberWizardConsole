@@ -19,7 +19,9 @@ public class ConsoleController {
 	
 	public delegate void VisibilityChangedHandler(bool visible);
 	public event VisibilityChangedHandler visibilityChanged;
-	#endregion
+    #endregion
+
+    public GameLogic gameLogic = new GameLogic { };
 
 	/// <summary>
 	/// Object to hold information about each command
@@ -35,6 +37,8 @@ public class ConsoleController {
 			this.help = help;
 		}
 	}
+
+    
 
 	/// <summary>
 	/// How many log lines should be retained?
@@ -134,6 +138,22 @@ public class ConsoleController {
 
 	#region Command handlers
 	//Implement new commands in this region of the file.
+
+    //Game start
+
+    //Game higher
+
+    //Game lower
+
+    //Game end
+
+    //Game min
+
+    //Game max
+        void game (string[] args)
+    {
+
+    }
 
 	/// <summary>
 	/// A test command to demonstrate argument checking/parsing.
